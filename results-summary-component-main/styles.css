@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+/* browser css reset */
+*{ 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+/* to center items */
+body{
+     display: grid; 
+     place-items: center; 
+     min-height: 100vh; 
+ }
+
+ /* Layout */
+ .card-container {
+    display: flex;
+    max-width: 46.875em;
+    /* border-radius: 8px; */
+ }
+ .left-card, .right-card {
+    border-radius: .625em;
+ }
+
+/* Left card / Purple card */
+.left-card {
+    flex: 1;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%)); 
+    border: .0625em solid red;
+    
+}
+.score-circle {
+    border: .0625em dashed salmon;
+    border-radius: 50%;
+    width: 6.25em;
+    height: 6.25em;
+}
+
+/* Right card / White card */
+.right-card {
+    flex: 1;
+    border: 2px dotted lime;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+/* FOOTER */
+.attribution { 
+    font-size: .6875em; 
+    text-align: center; 
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
