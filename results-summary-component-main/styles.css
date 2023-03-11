@@ -28,13 +28,31 @@ body{
     flex: 1;
     background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%)); 
     border: .0625em solid red;
+    color: white;
+    /* width: 90%; */
+    /* justify-content: center; */
     
+}
+.left-info {
+    /* border: 3px solid lightgrey; */
+    width: 70%;
+    margin: 0 auto;
 }
 .score-circle {
     border: .0625em dashed salmon;
     border-radius: 50%;
-    width: 6.25em;
-    height: 6.25em;
+    width: 7.5em;
+    height: 7.5em;
+    margin: 0 auto;
+}
+
+.score {
+    padding: 1em;
+    text-align: center;
+}
+span {
+    font-weight: 700;
+    font-size: 3em;
 }
 
 /* Right card / White card */
@@ -43,10 +61,36 @@ body{
     border: 2px dotted lime;
 }
 
+.items {
+    border: 1px dotted blueviolet;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em;
+}
+li {
+    padding: .5em 0;
+    border: 1px solid red;
+}
+
 ul {
     list-style-type: none;
 }
 
+/* button */
+button {
+    width: 85%;
+    margin: 1em;
+}
+
+/* typography */
+
+h4 {
+    /* text-align: center; */
+    padding: 1em;
+}
+.result-title {
+    text-align: center;
+}
 
 
 /* FOOTER */
@@ -56,4 +100,20 @@ ul {
 }
 .attribution a {
      color: hsl(228, 45%, 44%); 
+}
+
+ h2, .result-text {
+    text-align: center;
+}
+h2 {
+    padding: .4em;
+}
+
+.result-text {
+    padding-bottom: 2em;
+    /* color: #C4C4C4; */
+}
+
+.result-text, .result-title {
+    color: hsla(0, 0%, 95%, 0.7);
 }
