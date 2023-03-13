@@ -35,7 +35,7 @@ body{
 }
 .left-info {
     /* border: 3px solid lightgrey; */
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
 }
 .score-circle {
@@ -90,6 +90,7 @@ h4 {
 }
 .result-title {
     text-align: center;
+    padding-top: 2em;
 }
 
 
