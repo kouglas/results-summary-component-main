@@ -50,9 +50,13 @@ body{
     padding: 1em;
     text-align: center;
 }
-span {
+.score, .score-span {
     font-weight: 700;
-    font-size: 3em;
+    font-size: 1.5em;
+}
+
+small{
+    font-size: small;
 }
 
 /* Right card / White card */
@@ -61,7 +65,7 @@ span {
     border: 2px dotted lime;
 }
 
-.items {
+.list_items {
     border: 1px dotted blueviolet;
     width: 90%;
     margin: 0 auto;
@@ -76,10 +80,32 @@ ul {
     list-style-type: none;
 }
 
+.list__reaction {
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.list__memory {
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+.list__memory, .word {
+    
+    /* border: 1px solid blue; */
+}
+
+.list__verbal {
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.list__visual {
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
 /* button */
 button {
     width: 85%;
     margin: 1em;
+    border: 1px solid blue;
+    border-radius: 10px;
 }
 
 /* typography */
