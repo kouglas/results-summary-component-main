@@ -16,8 +16,9 @@ body{
  /* Layout */
  .card-container {
     display: flex;
-    max-width: 46.875em;
-    /* border-radius: 8px; */
+    max-width: 35em;
+    box-shadow: 6px 8px 15px 5px hsla(221, 100%, 96%, .78);
+    border-radius: .5em;
  }
  .left-card, .right-card {
     border-radius: .625em;
@@ -27,19 +28,14 @@ body{
 .left-card {
     flex: 1;
     background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%)); 
-    border: .0625em solid red;
     color: white;
-    /* width: 90%; */
-    /* justify-content: center; */
-    
 }
 .left-info {
-    /* border: 3px solid lightgrey; */
     width: 65%;
     margin: 0 auto;
 }
 .score-circle {
-    border: .0625em dashed salmon;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0)); 
     border-radius: 50%;
     width: 7.5em;
     height: 7.5em;
@@ -55,25 +51,40 @@ body{
     font-size: 1.5em;
 }
 
-small{
+small {
     font-size: small;
+}
+
+h2, .result-text {
+    text-align: center;
+}
+h2 {
+    padding: .4em;
+}
+
+.result-text {
+    padding-bottom: 2em;
+}
+
+.result-text, .result-title, small {
+    color: hsla(0, 0%, 95%, 0.7);
 }
 
 /* Right card / White card */
 .right-card {
     flex: 1;
-    border: 2px dotted lime;
 }
 
 .list_items {
-    border: 1px dotted blueviolet;
     width: 90%;
-    margin: 0 auto;
+    margin: -1em auto;
     padding: 1em;
+
 }
 li {
     padding: .5em 0;
-    border: 1px solid red;
+    margin: .5em;
+    border-radius: .25em;
 }
 
 ul {
@@ -84,34 +95,78 @@ ul {
     background-color: hsla(0, 100%, 67%, 0.1);
 }
 
+.list__reaction .word {
+    color: hsl(0, 100%, 67%);
+}
+
 .list__memory {
     background-color: hsla(39, 100%, 56%, 0.1);
 }
-.list__memory, .word {
-    
-    /* border: 1px solid blue; */
+.list__memory .word {
+   
+    color: hsl(39, 100%, 56%);
 }
 
 .list__verbal {
     background-color: hsla(166, 100%, 37%, 0.1);
 }
 
+.list__verbal .word {
+    color: hsl(166, 100%, 37%);
+}
+
 .list__visual {
     background-color: hsla(234, 85%, 45%, 0.1);
 }
 
-/* button */
-button {
-    width: 85%;
-    margin: 1em;
-    border: 1px solid blue;
-    border-radius: 10px;
+.list__visual .word {
+    color: hsl(234, 85%, 45%)
 }
 
-/* typography */
+.number {
+    float: right;
+    margin-right: .5em;
+}
+
+.word {
+    margin: 1em;
+    
+}
+
+strong {
+    color: hsl(224, 30%, 27%);
+}
+
+.number {
+    color: gray;
+}
+
+.summary-title {
+    margin-top: .7em;
+}
+
+
+
+/* BUTTON */
+
+button {
+    width: 100%;
+    border: .0625em solid hsl(224, 30%, 27%);
+    border-radius: 1.125em;
+    padding: .7em;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+}
+.button {
+    width: 215px;
+    margin: 0 auto;
+}
+/* TYPOGRAPHY */
 
 h4 {
-    /* text-align: center; */
     padding: 1em;
 }
 .result-title {
@@ -120,7 +175,7 @@ h4 {
 }
 
 
-/* FOOTER */
+/* FOOTER (& styling for small tag) */
 .attribution { 
     font-size: .6875em; 
     text-align: center; 
@@ -129,22 +184,12 @@ h4 {
      color: hsl(228, 45%, 44%); 
 }
 
- h2, .result-text {
-    text-align: center;
-}
-h2 {
-    padding: .4em;
-}
-
-.result-text {
-    padding-bottom: 2em;
-    /* color: #C4C4C4; */
-}
-
-.result-text, .result-title {
-    color: hsla(0, 0%, 95%, 0.7);
-}
+/* Media queries  */
 
 
-/* what to do about li spacing?? */
-/* still need to figure this out!!!! */
+@media only screen and (max-width: 37.5em) {
+    .card-container{
+       flex-direction: column;
+    }
+    
+}
